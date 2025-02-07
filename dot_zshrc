@@ -1,0 +1,68 @@
+clear
+
+###############################################################################
+# vars
+###############################################################################
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+
+###############################################################################
+# options
+###############################################################################
+setopt hist_ignore_all_dups # remove older duplicate entries from history
+setopt hist_reduce_blanks # remove superfluous blanks from history items
+setopt inc_append_history # save history entries as soon as they are entered
+setopt share_history # share history between different instances of the shell
+setopt auto_cd # cd by typing directory name
+setopt correct # autocorrect
+setopt correct_all # autocorrect commands
+setopt auto_list # automatically list choices on ambiguous completion
+setopt auto_menu # automatically use menu completion
+setopt always_to_end # move cursor to end if word has one match
+
+###############################################################################
+# completions
+###############################################################################
+autoload -Uz compinit && compinit
+autoload bashcompinit && bashcompinit # load bashcompinit for some old bash completions
+
+###############################################################################
+# dependencies
+###############################################################################
+if [[ ! -f ~/.zsh/antigen.zsh ]]; then
+  curl -L git.io/antigen > ~/.zsh/antigen.zsh
+fi
+
+###############################################################################
+# antigen
+###############################################################################
+source $HOME/.zsh/antigen.zsh
+
+###############################################################################
+# exports
+###############################################################################
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export EDITOR=code
+export VISUAL=$EDITOR
+
+###############################################################################
+# bundles
+###############################################################################
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+###############################################################################
+# theme
+###############################################################################
+# antigen theme geometry-zsh/geometry
+antigen theme spaceship-prompt/spaceship-prompt
+
+###############################################################################
+# done
+###############################################################################
+antigen apply
