@@ -7,7 +7,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
-SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=true
 
 ###############################################################################
 # options
