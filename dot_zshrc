@@ -6,7 +6,7 @@ clear
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#C0C0C0"
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 
 ###############################################################################
