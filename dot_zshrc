@@ -12,22 +12,22 @@ SPACESHIP_PROMPT_SEPARATE_LINE=true
 ###############################################################################
 # options
 ###############################################################################
-setopt hist_ignore_all_dups # remove older duplicate entries from history
-setopt hist_reduce_blanks # remove superfluous blanks from history items
-setopt inc_append_history # save history entries as soon as they are entered
-setopt share_history # share history between different instances of the shell
-setopt auto_cd # cd by typing directory name
+setopt hist_ignore_all_dups # remove duplicate history entries
+setopt hist_reduce_blanks # remove superfluous blank history entries
+setopt inc_append_history # instantly save history entries
+setopt share_history # share history
+setopt auto_cd # directory name = cd
 setopt correct # autocorrect
 setopt correct_all # autocorrect commands
-setopt auto_list # automatically list choices on ambiguous completion
-setopt auto_menu # automatically use menu completion
-setopt always_to_end # move cursor to end if word has one match
+setopt auto_list # automatically list completion choices
+setopt auto_menu # automatic menu completion
+setopt always_to_end # one match move cursor to end
 
 ###############################################################################
 # completions
 ###############################################################################
 autoload -Uz compinit && compinit
-autoload bashcompinit && bashcompinit # load bashcompinit for some old bash completions
+autoload bashcompinit && bashcompinit # for old bash completions
 
 ###############################################################################
 # dependencies
@@ -45,7 +45,7 @@ source $HOME/.zsh/antigen.zsh
 # exports
 ###############################################################################
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # nvm
 
 export EDITOR=code
 export VISUAL=$EDITOR
