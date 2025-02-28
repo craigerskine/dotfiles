@@ -6,8 +6,13 @@ clear
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#C0C0C0"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#C0C0C0'
 SPACESHIP_PROMPT_SEPARATE_LINE=true
+
+####################
+# aliases
+####################
+alias python='python3'
 
 ####################
 # options
@@ -46,8 +51,8 @@ antidote bundle spaceship-prompt/spaceship-prompt
 ####################
 # exports
 ####################
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # nvm
+export NVM_DIR='$HOME/.nvm'
+[ -s '$NVM_DIR/nvm.sh' ] && \. '$NVM_DIR/nvm.sh'  # nvm
 
 export EDITOR=code
 export VISUAL=$EDITOR
