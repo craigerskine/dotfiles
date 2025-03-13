@@ -51,6 +51,17 @@ antidote bundle zsh-users/zsh-syntax-highlighting
 antidote bundle spaceship-prompt/spaceship-prompt
 
 ####################
+# git
+####################
+if ! git config --global user.name > /dev/null 2>&1; then
+  git config --global user.name "Craig @craigerskine @qrayg"
+fi
+
+if ! git config --global user.email > /dev/null 2>&1; then
+  git config --global user.email "craigerskine.com"
+fi
+
+####################
 # exports
 ####################
 # nvm
