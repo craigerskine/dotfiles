@@ -11,5 +11,5 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply craigerskine
 ## Update
 
 ```sh
-chezmoi update -v
+chezmoi update
 ```
