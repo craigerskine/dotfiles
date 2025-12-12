@@ -14,7 +14,8 @@ SPACESHIP_PROMPT_DEFAULT_PREFIX='➜ '
 ####################
 # aliases
 ####################
-alias python='python3'
+alias cz=chezmoi
+alias python=python3
 
 ####################
 # options
