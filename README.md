@@ -12,4 +12,6 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply craigerskine
 
 ```sh
 chezmoi update
+# or - if you have the cz alias set
+cz update
 ```
