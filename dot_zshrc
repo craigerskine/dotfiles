@@ -7,7 +7,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#C0C0C0'
-SAY_VOICE='Fred'
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_DEFAULT_PREFIX='➜ '
@@ -17,7 +16,6 @@ SPACESHIP_PROMPT_DEFAULT_PREFIX='➜ '
 ####################
 alias cz=chezmoi
 alias python=python3
-alias say='say -v "$SAY_VOICE"'
 
 ####################
 # options
