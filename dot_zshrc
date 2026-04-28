@@ -59,7 +59,7 @@ if ! git config --global user.name > /dev/null 2>&1; then
 fi
 
 if ! git config --global user.email > /dev/null 2>&1; then
-  git config --global user.email "craigerskine.com"
+  git config --global user.email "craig@craigerskine.com"
 fi
 
 ####################
